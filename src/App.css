@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-wrapper.theme-dark {
+  --bg: #0d1220;
+  --text: #ffffff;
+  --card-bg: #131a2b;
+  --border: #222b3d;
+  --input-border: #2a3346;
+  --muted: #9aa4b2;
+}
+
+.app-wrapper.theme-light {
+  --bg: #f5f6fa;
+  --text: #111111;
+  --card-bg: #ffffff;
+  --border: #dddddd;
+  --input-border: #cccccc;
+  --muted: #555555;
+}
+
+.app-wrapper {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+/*  top bar  */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid var(--border);
+}
+
+
+.theme-btn {
+  background-color: transparent;
+  border: 1px solid var(--input-border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+
+/*logo*/
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* layout*/
+
+.container {
+  padding: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 14px;
+  max-width: 600px;
+}
+
+/* buttons */
+
+.btn-blue {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--input-border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* search and filter bar */
+
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.input {
+  background-color: var(--card-bg);
+  border: 1px solid var(--input-border);
+  color: var(--text);
+  padding: 10px;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.search-input {
+  flex-grow: 1;
+}
+
+.empty-message {
+  color: var(--muted);
+  margin-top: 30px;
+}
+
+/* lesson cards*/
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-banner {
+  height: 100px;
+  position: relative;
+}
+
+.card-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h3 {
+  margin-top: 0;
+}
+
+/* create lesson */
+
+.form-wrap {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.form-main {
+  flex: 2;
+}
+
+.form-section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-section h3 {
+  margin-top: 0;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 5px;
+  margin-top: 12px;
+}
+
+.form-input {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--bg);
+  border: 1px solid var(--input-border);
+  color: var(--text);
+  padding: 10px;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.form-side {
+  flex: 1;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 13px;
+  min-width: 220px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text);
+  margin-top: 8px;
+}
+
+.summary-label {
+  color: var(--muted);
+}
+
+/* detail page */
+
+.back-link {
+  color: var(--muted);
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.detail-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.detail-meta {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 15px 0;
+}
